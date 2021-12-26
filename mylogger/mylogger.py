@@ -1,12 +1,12 @@
 import io
 import logging
 import logging.config
-
+import os
 import yaml
 
 
 class Logger:
-    YAML_PATH = r'config/mylogger_config.yml'
+    YAML_PATH = os.path.join(os.path.dirname(__file__), 'config', 'mylogger_config.yml')
     string_io = io.StringIO()
 
     def __init__(self) -> None:

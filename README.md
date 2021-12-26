@@ -7,6 +7,8 @@ The resulting logger is capable of displaying in console, file and memory.
 * File -> stores logs in the /logs folder in the package directory.
 * Memory -> stores in memory the logs (exceptions/errors and above). Available for flushing at will.
 
+VERY IMPORTANT: once the buffer is flushed, the logger is done and can't work anymore unless it is reinstantiated.
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install mylogger.
